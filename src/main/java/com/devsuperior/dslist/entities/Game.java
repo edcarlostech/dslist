@@ -14,11 +14,11 @@ import jakarta.persistence.Table;
 public class Game {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY) //para que a chave seja auto incrementavel no banco
 	private Long id;
 	private  String title;
-	@Column(name = "game_year")
-	private Integer year;
+	@Column(name = "game_year")// alterando o nome da coluna no banco
+	private Integer year; //year palavra reservada de banco dedados 
 	private String genre;
 	private String platforms;
 	private Double score;
